@@ -12,6 +12,8 @@ class Carrito {
         }
 
     }
+
+    
     /* leer los datos del producto */
   /*   leerDatosProductos(producto) {
         const infoProducto = {
