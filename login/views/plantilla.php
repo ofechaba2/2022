@@ -65,8 +65,8 @@
                     <h5 class="modal-title" id="exampleModalLabel"><i class="bi bi-cart4"></i> Canasta de Compra</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <table class="table">
+                <div class="modal-body  carritocompras">
+                    <table class="table" id="lista_carrito">
                         <thead>
                             <tr>
 
@@ -76,22 +76,8 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
 
-                                <td>Emmpanadas de carne</td>
-                                <th>1</th>
-                            </tr>
-                            <tr>
-
-                                <td>Flautas vegetarianas</td>
-                                <th>2</th>
-                            </tr>
-                            <tr>
-
-                                <td>Gaseosa</td>
-                                <th>1</th>
-                            </tr>
-
+                            <!-- aca va la informacion del registro -->
                         </tbody>
 
                     </table>

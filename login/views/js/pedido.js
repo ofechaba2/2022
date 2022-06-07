@@ -1,7 +1,7 @@
-const carro = new carrito();
-const carrito = document.getElementById('carrito');
-const productos =doncument.getElementById('lista-productos');
-const listaProductos = documento.getElementById('#lista-carrito tbody');
+const carro = new Carrito();
+const carrito = document.getElementById('carritocompras');
+const productos =document.getElementById('lista_carrito');
+const listaProductos = document.querySelector('#lista_carrito tbody');
 
 cargarEventos();
 

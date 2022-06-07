@@ -11,14 +11,15 @@
         $productos = ControladorProductos::ctrConsultarProductos();
         ?>
         <?php foreach ($productos as $key => $value) :  ?>
-            <div class="col-12 col-lg-3">
-                <div class="card" style="width: auto;">
+            <div class="col-12 col-lg-3 item">
+                <div class="card productoTarget" id="productoTarget" style="width: auto;">
                     <img src=<?php echo $value["imagen"] ?> alt="" id="imagentarjeta">
-                    <div class="card-body">
+                    <div class="card-body productoTarget">
+                        <!-- id oculto para gestion -->
+                        <input id="prodId" name="prodId" type="hidden" value="<?php echo $value["id"] ?>">
 
-
-                        <button type="button" class="btn btn-default btn-circle btn-lg agregar_carrito"  id="btnprod"><i class="bi bi-cart-plus"></i>
-                        </button>
+                        <a href="" class="btn btn-default btn-circle btn-lg agregar_carrito" id="btnprod" data-id="<?php echo $value["id"] ?>"><i class="bi bi-cart-plus"></i>
+                        </a>
 
                         <div class="row" id="info">
                             <div class="col-12" id="nombreprod"> <?php echo $value["nombre"] ?>
@@ -31,7 +32,7 @@
                             </div>
 
                             <div class="col-md-9 col-8">
-                                <p class="card-text"> <?php echo $value["descripcion"] ?></p>
+                                <p class="card-text" id="descripcion"> <?php echo $value["descripcion"] ?></p>
                             </div>
                         </div>
 
